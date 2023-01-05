@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1d1165;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+#title {
+    color: #3ae374;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 50px;
+
+}
+#title i{
+    color:  #fa8231;
+
+}
+form {
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+}
+#btn {
+    background: none;
+    border: none; 
+    outline: none;
+    padding: 15px;
+    font-size: 1.8rem;
+    color:#3ae374;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+i {
+    pointer-events: none;
+}
+#btn:hover {
+    text-shadow: 0 0 5px #7bed9f;
+}
+#input {
+    background: white;
+    border: none; 
+    outline: none;
+    padding: 10px 15px;
+    min-width: 50%;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    color: black;
+}
+#input:hover {
+    box-shadow: 0 0 20px #7af5b8;   
+}
+#filter {
+    width: 50%;
+    margin: 20px auto;
+    background: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    
+}
+.filter {
+    width: 50%;
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+    align-items: center;
+    font-weight: 400;
+}
+.filter:hover {
+    transition: all 0.3s ease;
+    padding: 10px;
+    font-size: x-large ;
+    text-decoration: none;
+}
+#list {
+    width: 80%;
+    margin: auto;
+    list-style: none;
+    padding: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.todo {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fdf7f7;
+    border-radius: 10px;
+    min-height: 3rem;
+    padding: 10px;
+    display: flex;
+    color: black;
+    transition: all 0.3s ease;
+    align-items: center;
+    font-weight: 500;
+}
+.todo span{
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+}
+.todo:hover {
+    box-shadow: 0px 0px 5px #06e676;
+}
+.check{
+    cursor: pointer;
+    padding: 5px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color:#eb6207;
+    text-shadow: 0px 0px 20px#eb6207;
+    transition: all 0.3s ease;
+}
+.trash {
+    cursor: pointer;
+    padding: 5px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color:black;
+    text-shadow: 0px 0px 20px black;
+    transition: all 0.3s ease;
+}
+.check:hover {
+    color: rgb(37, 253, 37);
+    text-shadow: 0px 0px 30px lightgreen;
+}
+.trash:hover {
+    color: red;
+    text-shadow: 0px 0px 30px pink;
+}
+.fade {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.completed {
+    opacity: 0.5;
+    text-decoration: line-through;
+    transition: all 0.3s ease;
+}
